@@ -2,9 +2,12 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
-  production: false
+  production: false,
+  oauthToken: "Bearer BQBz9y3SW2Zy0DkUaFEBc6bESCy7aQKKgsLUZg62wNfCYOFQBIn30stXCA7eJVjtGo6axYKoN4qYfTpLFTjz6weOxJpDrYuEqPW9VjJBYii3LxZh1UIjlB_1Z0_AlY9Xm1OYyLEDD0vWmJ5TvlmFdCoHK8tm-R0"
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
