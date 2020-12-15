@@ -37,8 +37,14 @@ export class SpotifyService {
     const headers = new HttpHeaders({
       Authorization: 'Bearer BQAKLjFhm4I01eRc3mY6xIC5ghbZyEFhfr0FiUdWKX5zmlvMCgmk3pVrs48FQ6VjBHWkJRFSDgqCcIt2IHp975lwALpiOY4818AZjFiwTtHYVJ3RuF6lUFvqDyU7lcveckTtnSFpv4x9VY75ynzi8uYyw1zFaEI'
     });
+    return this.http.get(url, { headers });
+  }
+  getAlbum(id : string){
+    const url = `https://api.spotify.com/v1/albums/${id}`;
+    const headers = new HttpHeaders({
+      Authorization: 'Bearer BQBcuM-B4lBooTgwWf8na-f8r3gERkBiIKHmwM0u8BpZKJ714bWZ4wcyXUsdvM7n2aRce27k8t0FIEJXAQs4QKum4E0DekqOAIeSFANYbzV8ok7El2x6ZmJUMQvmSvlSw36Omq9YGaSBaQJrErQD0BnhHUxN6K0'
+    });
 
     return this.http.get(url, { headers });
   }
-
 }

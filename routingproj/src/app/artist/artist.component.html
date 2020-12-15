@@ -1,5 +1,4 @@
 
-
 <div class="container">
   <h2>{{artist.name}}</h2>
   <p>SPOTIFY ARTIST</p>
@@ -7,12 +6,12 @@
     <img class="card-img-top" src="{{artist.images[1].url}}" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">{{artist.name}}</h4>
+      <p class="card-text">{{artist.followers}}</p>
       <p class="card-text">{{artist.genres}}</p>
-      <a href="#" class="btn btn-primary">Album</a>
+      <p class="card-text">{{artist.type}}</p>
     </div>
   </div>
   <br>
 <div class="btn-group">
-          <button type="button" class="btn btn-primary" (click)="back()">back</button>
-          <a type="button" class="btn btn-success" [routerLink]="['/allAlbum', artist.id]">View all albums</a>
-        </div>
+<button type="button" class="btn btn-primary" (click)="back()">back</button>
+</div>
