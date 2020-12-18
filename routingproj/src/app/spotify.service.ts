@@ -16,7 +16,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQAE29zLqI-40hCw-BHc2DYDVZ8ak9RTaKELPSB9fHkFTVGeafijGue09q9Q1SiLa2Tx_oPPLlAogW3LGAuMn3ChyKQ9eeZFgM-C6shxfhE98OJH9h22sZtgMvP-EdfmEeHRCi3RTTI-M8VLcZK2dvozYLlYTpw'
+        'Bearer BQBvWU5xJljm-HSkQxGST2BVIqZQlZVKw09sU9XKnuUzzEZrbXydhmaqEiVsvoAaTjktK1oanl1c1joamTEF4vvnM0EsYMEGuM49f7yHY8YrWnk5TRTwUV3oOsyQ1aESfhG5Gaaf2qZW0mJnZCRGnI-GkNC9QMY'
     });
 
     let obsTracks = this.http.get(url, { headers });
@@ -27,7 +27,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/tracks/${id}`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQAE29zLqI-40hCw-BHc2DYDVZ8ak9RTaKELPSB9fHkFTVGeafijGue09q9Q1SiLa2Tx_oPPLlAogW3LGAuMn3ChyKQ9eeZFgM-C6shxfhE98OJH9h22sZtgMvP-EdfmEeHRCi3RTTI-M8VLcZK2dvozYLlYTpw'
+        'Bearer BQAUMtc6M_X-2rLSZyGeCSjp86EDI2_xLj9AjaOR0V5Az8FnVnu30dyISsUfAIxKSlXC3fJFrx3bRPFHDuYOdbGTY2eauCv_G2JDOp7wYCTe88ajUWIfQU1f_mpTlvgShFfgYelYG2aANauRyaQ1T3f0rCOECFs'
     });
 
     return this.http.get(url, { headers });
@@ -35,14 +35,14 @@ export class SpotifyService {
   getArtist(id : string){
     const url = `https://api.spotify.com/v1/artists/${id}`;
     const headers = new HttpHeaders({
-      Authorization: 'Bearer BQAKLjFhm4I01eRc3mY6xIC5ghbZyEFhfr0FiUdWKX5zmlvMCgmk3pVrs48FQ6VjBHWkJRFSDgqCcIt2IHp975lwALpiOY4818AZjFiwTtHYVJ3RuF6lUFvqDyU7lcveckTtnSFpv4x9VY75ynzi8uYyw1zFaEI'
+      Authorization: 'Bearer BQAUMtc6M_X-2rLSZyGeCSjp86EDI2_xLj9AjaOR0V5Az8FnVnu30dyISsUfAIxKSlXC3fJFrx3bRPFHDuYOdbGTY2eauCv_G2JDOp7wYCTe88ajUWIfQU1f_mpTlvgShFfgYelYG2aANauRyaQ1T3f0rCOECFs'
     });
     return this.http.get(url, { headers });
   }
   getAlbum(id : string){
     const url = `https://api.spotify.com/v1/albums/${id}`;
     const headers = new HttpHeaders({
-      Authorization: 'Bearer BQBcuM-B4lBooTgwWf8na-f8r3gERkBiIKHmwM0u8BpZKJ714bWZ4wcyXUsdvM7n2aRce27k8t0FIEJXAQs4QKum4E0DekqOAIeSFANYbzV8ok7El2x6ZmJUMQvmSvlSw36Omq9YGaSBaQJrErQD0BnhHUxN6K0'
+      Authorization: 'Bearer BQAUMtc6M_X-2rLSZyGeCSjp86EDI2_xLj9AjaOR0V5Az8FnVnu30dyISsUfAIxKSlXC3fJFrx3bRPFHDuYOdbGTY2eauCv_G2JDOp7wYCTe88ajUWIfQU1f_mpTlvgShFfgYelYG2aANauRyaQ1T3f0rCOECFs'
     });
 
     return this.http.get(url, { headers });
